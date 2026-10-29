@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css}\" \"*.{json,ts,mjs}\" \".vscode/*.json\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,css}\" \"*.{json,ts,mjs}\" \".vscode/*.json\""
   },
   "dependencies": {
     "next": "16.4.3",
@@ -14,12 +16,13 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "^4",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
